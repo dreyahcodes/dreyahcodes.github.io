@@ -66,6 +66,15 @@ gulp.task('sass', function () {
         .pipe(gulp.dest('assets/css'));
 });
 
+/*
+* Dreyah is trying to gulp stuff
+*/
+
+gulp.task('pug', function (){
+    return gulp.src('_pugfiles/*.pug')
+    .pipe(pug())
+    .pipe(gulp.dest('_includes'));         
+});
 
 
 
@@ -77,20 +86,9 @@ gulp.task('watch', function () {
     gulp.watch('assets/css/**', ['sass']);
     gulp.watch(['index.html', '_layouts/*.html', '_includes/*'], ['jekyll-rebuild']);
     gulp.watch('_pugfiles/*.pug', ['pug']);
-
+ 
 });
-
-
-
-/*
-* Dreyah is trying to gulp stuff
-*/
-
-gulp.task('pug', function (){
-    return gulp.src('_pugfiles/*.pug')
-    .pipe(pug())
-    .pipe(gulp.dest('_includes'));         
-});
+  
 
 /**
  * Default task, running just `gulp` will compile the sass,
