@@ -521,14 +521,28 @@ body {
   .home-sections .flex--space-around {
     -ms-flex-pack: distribute;
         justify-content: space-around; }
+  .home-sections .order-first {
+    -ms-flex-order: -1;
+        order: -1; }
 
 .col-1 {
   max-width: 300px;
   margin: 0 10px;
   background: pink; }
 
+.col-2 {
+  max-width: 620px;
+  margin: 0 10px;
+  background: honeydew; }
+
+.col-50 {
+  width: 50%;
+  background: yellow; }
+
 @media (max-width: 640px) {
   .home-sections .flex {
     display: block; }
   .col-1 {
-    max-width: 100%; } }
+    max-width: 100%; }
+  .col-50 {
+    width: auto; } }
