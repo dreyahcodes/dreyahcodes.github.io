@@ -550,6 +550,12 @@ section.about {
     margin-right: auto;
     max-width: 300px; } }
 
+section.youtube {
+  background-image: url(../img/youtube_section.jpg);
+  background-position: center;
+  background-size: cover;
+  color: white; }
+
 .home-wrap {
   display: -ms-flexbox;
   display: flex;
@@ -605,3 +611,8 @@ section.about {
 .home-lead {
   font-size: 36px;
   line-height: 1.1; }
+  .home-lead.outdented {
+    text-indent: -0.75em; }
+    @media (max-width: 640px) {
+      .home-lead.outdented {
+        text-indent: 0; } }
