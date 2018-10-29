@@ -626,7 +626,7 @@ section.youtube {
           padding: 0px 20px 50px; } }
 
 section.mentoring {
-  background-image: url(../img/mentoring_image_color.png);
+  background-image: url(../img/mentoring_image.png);
   background-size: cover;
   background-position: center;
   color: white;
@@ -641,7 +641,7 @@ section.mentoring {
   section.mentoring .home-lead {
     margin-top: 250px; }
   section.mentoring .home-cta {
-    color: #34125e; }
+    color: #181819; }
   section.mentoring .faces {
     list-style: none;
     margin: -50px 0;
@@ -744,7 +744,8 @@ section.articles {
     transition: all 200ms ease-in-out;
     opacity: 0; }
     section.articles .article-meta .name {
-      font-size: 18px; }
+      font-size: 18px;
+      line-height: 1.2; }
     section.articles .article-meta .date {
       font-style: italic; }
   section.articles .article-thumb:hover .article-meta {
@@ -753,6 +754,9 @@ section.articles {
   @media (max-width: 640px) {
     section.articles .desc-wrap {
       margin-top: 80px; } }
+  @media (max-width: 999px) and (min-width: 640px) {
+    section.articles .article-thumb {
+      width: 33.3%; } }
 
 .home-wrap {
   display: -ms-flexbox;
