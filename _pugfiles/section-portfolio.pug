@@ -1,0 +1,34 @@
+mixin design-img(link, img)
+  a(href=`${link}`).design-img-link
+    img(src=`assets/img/portfolio-img/${img}`)
+
+  //-   mixin face(face, words, name)
+  //- li.face(style='background-image: url(' + face + ');')
+  //-   .bubble  
+  //-     p #{words}
+  //-     cite - #{name}
+
+section
+  .flex.flex--center
+    .col-50.flex.flex-center
+      .col-1
+        p.home-lead ...Building software applications with...
+        +design-img('','1_html_logobox.png')
+        +design-img('','2_css_logobox.png') 
+        +design-img('','3_sass_logobox.png')  
+        +design-img('','4_javascript_logobox.png')
+        +design-img('','5_jekyll_logobox.png') 
+        +design-img('','6_gulp_logobox.png') 
+
+        a(href="").home-cta see more 
+  
+    .col-50.flex.flex-center
+      .col-1
+        p.home-lead ...and learning new frameworks...
+        +design-img('','7_react_logobox.png')
+        +design-img('','2_css_logobox.png') 
+        +design-img('','3_sass_logobox.png')  
+        +design-img('','4_javascript_logobox.png')
+        +design-img('','5_jekyll_logobox.png') 
+        +design-img('','6_gulp_logobox.png') 
+        a(href="").home-cta see more 
