@@ -1,5 +1,5 @@
-mixin design-img(link, img)
-  a(href=`${link}`).design-img-link
+mixin design-img(link, img, color)
+  a(href=`${link}` data-color=`${color}`).design-img-link
     img(src=`assets/img/portfolio-img/${img}`)
 
   //-   mixin face(face, words, name)
@@ -8,27 +8,34 @@ mixin design-img(link, img)
   //-     p #{words}
   //-     cite - #{name}
 
-section
+
+//- replaced dribble section for building 
+//- replaced behance section for learning
+
+section.portfolio
   .flex.flex--center
-    .col-50.flex.flex-center
+    .col-50.flex.flex--center.building(data-orig-color="#ea4c89") 
       .col-1
         p.home-lead ...Building software applications with...
-        +design-img('','1_html_logobox.png')
-        +design-img('','2_css_logobox.png') 
-        +design-img('','3_sass_logobox.png')  
-        +design-img('','4_javascript_logobox.png')
-        +design-img('','5_jekyll_logobox.png') 
-        +design-img('','6_gulp_logobox.png') 
+        +design-img('','1_html_logobox.png', 'orange')
+        +design-img('','2_css_logobox.png', '#aeb3b0') 
+        +design-img('','3_sass_logobox.png', '#38decc')  
+        +design-img('','4_javascript_logobox.png', '#d21d16')
+        +design-img('','5_jekyll_logobox.png', '#890cee') 
+        +design-img('','6_gulp_logobox.png', '#d6d599') 
+        .cf
 
         a(href="").home-cta see more 
   
-    .col-50.flex.flex-center
+    .col-50.flex.flex--center.learning
       .col-1
         p.home-lead ...and learning new frameworks...
-        +design-img('','7_react_logobox.png')
-        +design-img('','2_css_logobox.png') 
-        +design-img('','3_sass_logobox.png')  
-        +design-img('','4_javascript_logobox.png')
-        +design-img('','5_jekyll_logobox.png') 
-        +design-img('','6_gulp_logobox.png') 
+        +design-img('','7_react_logobox.png', '#5aabd5')
+        +design-img('','2_css_logobox.png', '#d32022') 
+        +design-img('','3_sass_logobox.png', '#4c4c4c')  
+        +design-img('','4_javascript_logobox.png', '#f59e82')
+        +design-img('','5_jekyll_logobox.png', '#d57628') 
+        +design-img('','6_gulp_logobox.png', '#f6c599') 
+        .cf
+
         a(href="").home-cta see more 
