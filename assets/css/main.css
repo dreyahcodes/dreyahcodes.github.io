@@ -799,7 +799,9 @@ section.vine {
       margin-top: 50px; } }
 
 .home-sections .portfolio {
-  padding: 0px;
+  padding: 0px; }
+
+section.portfolio {
   color: white; }
   .home-sections .portfolio .home-lead {
     text-align: center;
