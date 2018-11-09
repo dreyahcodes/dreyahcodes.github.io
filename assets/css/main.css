@@ -803,36 +803,49 @@ section.vine {
 
 section.portfolio {
   color: white; }
-  section.portfolio .home-lead {
+  .home-sections .portfolio .home-lead {
     text-align: center;
     font-size: 28px; }
-  section.portfolio .building, section.portfolio .learning {
+  .home-sections .portfolio .building, .home-sections .portfolio .learning {
     background-color: #ea4c89;
     background-image: url(/assets/img/portfolio_map.png);
     background-position: center;
     padding: 50px 0;
     transition: background-color 150ms ease-in-out; }
-    section.portfolio .building.learning, section.portfolio .learning.learning {
+    .home-sections .portfolio .building.learning, .home-sections .portfolio .learning.learning {
       background-color: #1769ff; }
-      section.portfolio .building.learning .home-cta, section.portfolio .learning.learning .home-cta {
+      .home-sections .portfolio .building.learning .home-cta, .home-sections .portfolio .learning.learning .home-cta {
         color: #1769ff; }
-  section.portfolio .home-cta {
+  .home-sections .portfolio .home-cta {
     font-size: 24px; }
-  section.portfolio .design-img-link {
+  .home-sections .portfolio .design-img-link {
     display: block;
     float: left;
     width: calc(50% - 14px);
     border: 2px solid white;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
     margin: 5px; }
-    section.portfolio .design-img-link:hover {
+    .home-sections .portfolio .design-img-link:hover {
       transform: scale(1.1); }
-    section.portfolio .design-img-link img {
+    .home-sections .portfolio .design-img-link img {
       width: 100%;
       display: block; }
-  section.portfolio .cf {
+  .home-sections .portfolio .cf {
     clear: both;
     margin-bottom: 20px; }
+
+.home-footer a {
+  color: white;
+  background: #e24040;
+  display: block;
+  width: 100%;
+  line-height: 3;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 300;
+  transition: background 150ms ease-in-out; }
+  .home-footer a:hover {
+    background: #d82121; }
 
 .home-wrap {
   display: -ms-flexbox;
