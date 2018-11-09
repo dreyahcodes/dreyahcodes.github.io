@@ -798,6 +798,9 @@ section.vine {
     section.vine .description {
       margin-top: 50px; } }
 
+.home-sections .portfolio {
+  padding: 0px; }
+
 section.portfolio {
   color: white; }
   section.portfolio .home-lead {
