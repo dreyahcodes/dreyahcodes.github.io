@@ -803,34 +803,34 @@ section.vine {
 
 section.portfolio {
   color: white; }
-  .home-sections .portfolio .home-lead {
+  section.portfolio .home-lead {
     text-align: center;
     font-size: 28px; }
-  .home-sections .portfolio .building, .home-sections .portfolio .learning {
+  section.portfolio .building, section.portfolio .learning {
     background-color: #ea4c89;
     background-image: url(/assets/img/portfolio_map.png);
     background-position: center;
     padding: 50px 0;
     transition: background-color 150ms ease-in-out; }
-    .home-sections .portfolio .building.learning, .home-sections .portfolio .learning.learning {
+    section.portfolio .building.learning, section.portfolio .learning.learning {
       background-color: #1769ff; }
-      .home-sections .portfolio .building.learning .home-cta, .home-sections .portfolio .learning.learning .home-cta {
+      section.portfolio .building.learning .home-cta, section.portfolio .learning.learning .home-cta {
         color: #1769ff; }
-  .home-sections .portfolio .home-cta {
+  section.portfolio .home-cta {
     font-size: 24px; }
-  .home-sections .portfolio .design-img-link {
+  section.portfolio .design-img-link {
     display: block;
     float: left;
     width: calc(50% - 14px);
     border: 2px solid white;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
     margin: 5px; }
-    .home-sections .portfolio .design-img-link:hover {
+    section.portfolio .design-img-link:hover {
       transform: scale(1.1); }
-    .home-sections .portfolio .design-img-link img {
+    section.portfolio .design-img-link img {
       width: 100%;
       display: block; }
-  .home-sections .portfolio .cf {
+  section.portfolio .cf {
     clear: both;
     margin-bottom: 20px; }
 
