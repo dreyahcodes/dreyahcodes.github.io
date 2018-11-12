@@ -836,7 +836,7 @@ section.portfolio {
 
 .home-footer a {
   color: white;
-  background: #e24040;
+  background: #114B5F;
   display: block;
   width: 100%;
   line-height: 3;
@@ -845,7 +845,7 @@ section.portfolio {
   font-weight: 300;
   transition: background 150ms ease-in-out; }
   .home-footer a:hover {
-    background: #d82121; }
+    background: #0b303c; }
 
 .home-wrap {
   display: -ms-flexbox;

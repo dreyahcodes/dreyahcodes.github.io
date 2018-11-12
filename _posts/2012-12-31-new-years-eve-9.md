@@ -4,4 +4,4 @@ title: News years eve is awesome
 thumbnail: post_9.jpg
 ---
 
-{{post.title}}
+# Hello Friend!
