@@ -1,0 +1,93 @@
+@function text-stroke($size: 2, $color: #fff, $correction: 0) {
+	$radius: $size - $correction;
+	$stroke: ();
+
+	@for $i from -$size through $size {
+		@for $k from -$size through $size {
+
+			$x: $k;
+			$y: $i;
+
+			@if $k > 0 {
+				$x: $k - 0.5;
+			} @elseif $k < 0 {
+				$x: $k + 0.5;
+			}
+
+			@if $i > 0 {
+				$y: $i - 0.5;
+			} @elseif $i < 0 {
+				$y: $i + 0.5;
+			}
+
+			@if ($x*$x + $y*$y <= $radius*$radius) {
+				$stroke: append($stroke, $i*1px $k*1px 0 $color, comma);
+			}
+		}
+	}
+
+	@return $stroke;
+}
+
+@mixin text-stroke($size: 2, $color: #fff, $correction: 0) {
+	text-shadow: text-stroke($size, $color, $correction);
+}
+
+
+section.about {
+  background-image: url(../img/dreyah_image4.jpg);
+  background-position: center top;
+  background-size: cover;
+  color: #3f3f42;
+  // color: #F56960
+
+  h2 {
+    @include text-stroke(1, #ffffff);
+    color:  #3f3f42;
+    font-size: 60px;
+    font-weight: 450;
+    line-height: 1;
+    margin-left: -45px;
+    margin-top: 0;
+  }
+
+
+
+  .home-lead {
+    @include text-stroke(1, #fff);
+    color:  #3f3f42;
+    padding-bottom: 290px;
+  }
+}
+
+  
+    
+
+
+@media (max-width: 640px) {
+  section.about {
+    h2, {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 300px;
+    }
+      
+  }
+    
+}
+  
+
+
+
+@media (max-width: 640px) {
+  section.about {
+    .home-lead {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 300px;
+    }
+      
+  }
+    
+}
+  
